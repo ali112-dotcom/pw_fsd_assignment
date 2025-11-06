@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Q&A Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div class="qa-container">
+            <a href="#" class="logo">
+                <img src="data:image/webp;base64,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" alt="logo"> My Portfolio
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Developer Q&A Portfolio</h1>
+                <p>Demonstrating fundamental concepts through code and clear explanations.</p>
+                <a href="#qa-section" class="btn-primary">View My Answers</a>
+            </div>
+        </section>
+    </main>
+    <hr>
+
+    <section id="qa-section" class="qa-section">
+        <h2 class="section-title" style="text-align: center; color: #0095cc;">HTML Questions & Answers</h2>
+
+     <div class="question-answer">
+            <details>
+                <summary><b>Question 1:</b> Explain the basic structure of an HTML page. Why is it important to follow this structure?</summary>
+                <div class="ans"><pre><code class="language-html">
+                <h4 class="tag"> &lt;!DOCTYPE html&gt;</h4>
+                <p>This is the document type declaration. It's the very first thing in an HTML document and tells the browser which version of HTML to expect (in this case, HTML5). It is not an HTML tag, but an instruction.</p>
+
+                <h4>&lt;html&gt;</h4>
+                <p>This is the root element of the page. All other elements must be descendants of this tag. It typically includes the lang attribute to declare the language of the page content (e.g., &lt;html lang="en"&gt;).</p>
+
+                <h4 class="tag">&lt;head&gt;</head></h4>
+                <p>The header section contains meta-information about the HTML document that is not displayed directly on the page. Essential elements within &lt;head&gt; include:</p>
+
+                <h4 class="tg">&lt;meta charset="UTF-8"&gt;</h4>
+                <p>Specifies the character encoding, typically UTF-8, to handle most characters correctly.</p>
+
+                <h4 class="tag">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</h4>
+                <p>Important for responsiveness on different devices.</p>
+
+                <h4 class="tag">&lt;title&gt;</h4>
+                <p>Sets the title that appears in the browser tab or window title bar.</p>
+
+                <h4 class="tag">&lt;link&gt;</h4> 
+                <p>Used to link external resources, most commonly CSS stylesheets.</p>
+
+                <h4 class="tag">&lt;script&gt;</h4>
+                <p>Can be used to include JavaScript (often placed near the closing &lt;/body&gt; as well for performance).</p>
+
+                <h4 class="tag">&lt;body&gt;</h4>
+                <p>The body section contains the visible page content. This includes all the text, images, links, tables, and other elements that a user sees and interacts with. This is where you put your main content elements like...</p>
+                </code></pre>
+               
+                <ul>
+                    <li>headings</li>
+                    <li>paragraphs</li>
+                    <li>images</li>
+                    <li>links</li>
+                    <li>divisions</li>
+                    <li>script.... many others</li>
+                </ul>
+                </div>
+            </details>
+        </div>
+        <div class="question-answer">
+            <details>
+                <summary> <b>Question 2:</b> You’re building a small personal profile page. Which HTML tags will you
+                            use to highlight your name as a heading, describe yourself in a paragraph, and
+                            emphasize a key skill?</summary>
+                <div class="ans">
+                    <div class="about-container">
+                        <h1 class="bout-h1">Ali Hossin Paik</h1>
+
+                        <p class="about-p">To highlight my name as a heading, I would use one of the heading tags, typically <span class="highlight">&lt;h1&gt;</span> for the main heading.</p>
+
+                        <p>I'm <span class="about-highlight">Ali Hossin Pik</span>, a dedicated learner based in <span class="highlight">Dakshin Barasat, West Bengal</span>. Having completed my H.S. in 2019, I’m currently focused on mastering the <span class="highlight">Full Stack Development (FSD)</span> course at <span class="highlight">PW Skills</span>. My core drive is to continually explore new technologies and skills. While I enjoy diving deep into new things, my true passion and current sole hobby is <span class="highlight">coding</span> — reflecting my commitment to building a strong technical foundation.</p>
+
+                        <div class="skills">
+                            <h2>🧠 Key Skills</h2>
+                            <div class="skill-list">
+                                <span class="skill">HTML & CSS </span>
+                                <span class="skill">Google Apps Script</span>
+                                <span class="skill">Excel Automation</span>
+                                <span class="skill">Accounting Systems</span>
+                                <span class="skill">Problem Solving</span>
+                                <span class="skill">Self Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="question-answer">
+            <details>
+                <summary><b>Question 3:</b> Look at the code below. Can you find and fix the mistake?<br/>
+                <pre><code class="language-html">&lt;!-- This is an HTML comment-- <br/>
+                &lt;h1&gt;Welcome to my website&lt;/h1&gt; </code></pre></summary>
+                
+                <div class="ans">
+                    <pre><code class="language-html">
+                    <p>The mistake in the code is in the HTML comment syntax. The correct syntax for an HTML comment is &lt;!-- comment text --&gt;. The closing part of the comment is missing the exclamation mark. Here is the corrected code:</p>
+                    &lt;!-- This is an HTML comment --&gt;</code></pre>
+                </div>
+
+            </details>
+        </div>
+
+        <div class="question-answer">
+            <details>
+                <summary><b>Question 4:</b> You’re creating a form that asks the user to enter their name, select their
+                country from a list, and click a button to submit. Write the HTML code for this.</summary>
+                
+                <div class="ans">
+                    <pre><code class="language-html">
+                        &lt;form action="/submit" method="post"&gt;
+                            &lt;label for="name"&gt;Name:&lt;/label&gt;
+                            &lt;input type="text" id="name" name="name" placeholder="type your full name" required&gt;&lt;br&gt;&lt;br&gt;
+                            &lt;label for="country"&gt;Country:&lt;/label&gt;
+                            &lt;select id="country" name="country" placeholder="select" required&gt;
+                                &lt;option value="" disabled selected&gt;Select your country&lt;/option&gt;
+                                &lt;option value="usa"&gt;United States&lt;/option&gt;
+                                &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+                                &lt;option value="canada"&gt;Canada&lt;/option&gt;
+                                &lt;option value="australia"&gt;Australia&lt;/option&gt;
+                                &lt;option value="india"&gt;India&lt;/option&gt;
+                            &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+                            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                        &lt;/form&gt;</code>
+                    </pre>
+                </div>
+
+                
+                <div class="form-section">
+                    <h2 class="form-head">form output</h2>
+                    <form id="demo" action="/submit" method="post" class="form-container">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="type your full name" required>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" placeholder="select your country" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                            <option value="india">India</option>
+                        </select><br><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </details>
+        </div>
+        <div class="question-answer">
+            <details>
+                <summary><b>Question 5:</b> Write short HTML code to show your favorite fruits in a bulleted list and
+                your top 3 programming languages in a numbered list.</summary>
+                <div class="code-space">
+                    <pre><code class="language-html">
+                    &lt;h2&gt;My Favorite Fruits&lt;/h2&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;Mango&lt;/li&gt;
+                    &lt;li&gt;Banana&lt;/li&gt;
+                    &lt;li&gt;Apple&lt;/li&gt;
+                    &lt;li&gt;Orange&lt;/li&gt;
+                    &lt;li&gt;Grapes&lt;/li&gt;
+                    &lt;/ul&gt;
+                    </code></pre>
+                </div>
+
+                <h2>code output</h2>
+                <div class="output-containeer">
+                    <h2>My Favorite Fruits</h2>
+                    <ul class="ul-fruits" id="fruitlist">
+                        <li class="fruits" data-fruit="mango">Mango</li>
+                        <li class="fruits" data-fruit="mango">Banana</li>
+                        <li class="fruits" data-fruit="mango">Apple</li>
+                        <li class="fruits" data-fruit="mango">Orange</li>
+                        <li class="fruits" data-fruit="mango">Grapes</li>
+                    </ul>
+                </div>
+                    
+                <div class="code-spce">
+                    <h2>code space</h2>
+
+                    <pre><code class="language-html">
+
+                    &lt;h2&gt;Top 3 Programming Languages&lt;/h2&gt;
+                    &lt;ol&gt;
+                    &lt;li&gt;JavaScript&lt;/li&gt;
+                    &lt;li&gt;Python&lt;/li&gt;
+                    &lt;li&gt;Java&lt;/li&gt;
+                    &lt;/ol&gt;</code></pre>
+                </div>
+
+                <h2>code output</h2>
+                <div class="code-output">
+                    <h2>Top 3 Programming Languages</h2>
+                    <ol class="programming-lan">
+                        <li class="lan" data-lan="JavaScript">JavaScript</li>
+                        <li class="lan" data-lan="Python">Python</li>
+                        <li class="lan" data-lan="Java">Java</li>
+                    </ol>
+                </div>
+
+            </details>
+        </div>
+
+            <div class="question-answer">
+            <details>
+                <summary><b>Question 6:</b> Ravi wants to leave a note in his HTML file so that only other developers
+                can see it, not the users on the website. How should he do this? Why are such notes useful?</summary>
+
+                <div class="ans">
+                <p>Ravi can leave a note in his HTML file by using HTML comments. HTML comments are not displayed in the browser when the page is rendered, making them ideal for leaving notes for other developers. The syntax for an HTML comment is as follows:</p>
+                <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+                <p>Such notes are useful for several reasons:</p>
+                <ul>
+                    <li><strong>Code Explanation:</strong> Comments can explain the purpose of certain sections of code, making it easier for other developers (or even the original developer at a later time) to understand the logic and functionality.</li>
+                    <li><strong>Collaboration:</strong> In team environments, comments help communicate ideas, intentions, or reminders to other team members working on the same codebase.</li>
+                    <li><strong>Debugging:</strong> Developers can use comments to temporarily disable parts of the code during debugging without deleting them.</li>
+                    <li><strong>Documentation:</strong> Comments can serve as inline documentation, providing context about how certain features are implemented or why specific decisions were made.</li>
+                </ul>
+                </div>
+    
+            </details>
+        </div>
+
+        <div class="question-answer">
+            <details>
+                <summary><b>Question 7:</b> Here’s a form snippet. Can you spot the error and rewrite the correct version?
+                    <div class="code-space">
+                        <pre><code class="language-html">
+                        &lt;form&gt;
+                        &lt;input name="email"&gt;
+                        &lt;select&gt;
+                        &lt;option&gt;India&lt;/option&gt;
+                        &lt;/select&gt;
+                        &lt;button&gt;Send&lt;/buton&gt;
+                        &lt;/form&gt;</code></pre>
+                    </div>
+                </summary>
+
+                   
+                <p>The errors in the provided form snippet are as follows:</p>
+                    
+                    <div class="code-space">
+                        <pre><code class="language-html">
+                        &lt;form&gt;
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;   &lt;!-- Added label for better accessibility --&gt;
+                        &lt;input type="email" id="email" name="email" placeholder="your email addres" required&gt; &lt;br&gt;    &lt;!-- Added type attribute and required attribute --&gt;
+                        &lt;label for ="country"&gt;country:&lt;/label&gt;   &lt;!-- Added label for better accessibility --&gt;
+                        &lt;select name="country" required&gt;  &lt;!-- Added name attribute and required attribute --&gt; &lt;br&gt;
+                        &lt;option value="india"&gt;India&lt;/option&gt;&lt;!-- Added value attribute and it's better to add multiple country--&gt;
+                        &lt;option value="usa&gt;usa&lt;option&gt;
+                        &lt;option value="usa&gt;chaina&lt;option&gt;  
+                        &lt;/select&gt; &lt;br&gt;
+                        &lt;button type="submit"&gt;Send&lt;/button&gt;     &lt;!-- Corrected closing tag --&gt;
+                        &lt;/form&gt;</code></pre>
+                    </div>
+                <p>Here is the corrected version of the form snippet with the necessary fixes applied:</p>  
+
+                <div class="form-output">
+                    <h2>code output</h2>
+                    <form id="demo" class="form-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your email addres" required>
+                        <label for ="country">country:</label>
+                        <select name="country" required>
+                            <option value="india">India</option>
+                            <option value="usa">United States</option>
+                            <option value="usa">Chaina</option>
+                        </select>
+                        <br><br>
+                        <button type="submit" class="form-btn">Send</button>
+                    </form>
+                </div>
+
+            </details>
+        </div>
+
+        <a href="https://github.com/ali112-dotcom" class="code-btn" target="_blank" role="button">
+            <i class="fab fa-github"></i> View My GitHub
+        </a>
+            
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+    <script src="fruits.js"></script>
+    <script src="lan.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
